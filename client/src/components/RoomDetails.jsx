@@ -152,6 +152,42 @@ const RoomDetails = () => {
             </div>
           ))}
         </div>
+
+        <div className="max-w-3xl border-y border-gray-300 my-15 py-10 text-gray-500">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+            corporis quaerat repudiandae quia vitae soluta explicabo excepturi
+            blanditiis! Iure sed odio cumque sapiente rerum rem! Quasi harum vel
+            molestiae esse veniam est aspernatur delectus provident, ullam
+            magnam aut, expedita rem totam autem a maxime ducimus omnis cumque
+            ut dolores mollitia. Ex incidunt itaque minus eveniet temporibus
+            rerum repudiandae impedit ab architecto quo aperiam aliquam nesciunt
+            sapiente iure minima sit a hic libero, similique alias consequatur
+            tenetur labore. Esse aperiam alias voluptates dolore quasi, facere
+            eligendi fugit quam minus expedita labore ratione, aut incidunt
+            dolor? Eligendi esse earum blanditiis facilis soluta.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-start gap-4">
+          <div className="flex gap-4">
+            <img
+              src={room?.hotel?.owner?.image}
+              alt="host"
+              className="h-14 w-14 md:h-18 md:w-18 rounded-full"
+            />
+            <div>
+              <p className="text-lg md:text-xl">Hosted by {room.hotel.name}</p>
+              <div className="flex items-center mt-1">
+                <StarRating />
+                <p className="ml-2">+200 reviews</p>
+              </div>
+            </div>
+          </div>
+          <button className="px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer">
+            Contact Now
+          </button>
+        </div>
       </div>
     )
   );
