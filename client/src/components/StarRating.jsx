@@ -1,7 +1,7 @@
 import React from "react";
 import { assets } from "../assets/assets";
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating = 3 }) => {
   return (
     <>
       {Array(5)
